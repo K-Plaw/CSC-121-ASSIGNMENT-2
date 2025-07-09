@@ -1,179 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSC121 Assignment - 26/06/2025</title>
-</head>
+<!Doctype html>
+<html>
+    <head></head>
 <body>
+<form>
+<p>Payment Order Form</p>
+  <label>ORDER NUMBER: <input type="text" name="order_number" placeholder="Enter Order number"></label><br><br>
 
-    <!-- Header Section -->
-    <table border="1" width="100%" cellpadding="5" cellspacing="0">
-        <tr>
-            <!-- <td rowspan="5" width="100">
-                <img src="" alt="UNIUYO Logo" width="100" height="100">
-            </td> -->
-            <td colspan="3" align="center">
-                <h3>OFFICE OF THE REGISTRAR</h3>
-                <h1>UNIVERSITY OF UYO</h1>
-                <p>P.M.B 1017, UYO, AKWA IBOM STATE, NIGERIA</p>
-                <small>Website: <a href="www.uniuyo.edu.ng">www.uniuyo.edu.ng</a> | Email: <a href="mailto:vc@uniuyo.edu.ng">vc@uniuyo.edu.ng</a> | Mobile: +234(0)-7017174407</small>
-            </td>
-        </tr>
-    <br>
-    <!-- Student Info Section -->
-        <tr>
-            <td colspan="3"><strong>STUDENT'S INFORMATION</strong></td>
-            <td rowspan="6">
-                <table border="1" >
-                    <tr>
-                        <td><img src="qr-code.png" alt="QR Code" width="100" height="100"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="Debbie.jpg" alt="Student Passport Photo" width="100" height="100"></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Gender:</strong></td>
-                        <td>Female</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td><strong>Matric Number:</strong></td>
-            <td colspan="2">24/SC/CO/310</td>
-        </tr>
-        <tr>
-            <td><strong>Full Name:</strong></td>
-            <td colspan="2">Essien, Deborah Eshiet</td>
-        </tr>
-        <tr>
-            <td><strong>Faculty:</strong></td>
-            <td colspan="2">Computing</td>
-        </tr>
-        <tr>
-            <td><strong>Department:</strong></td>
-            <td colspan="2">Computer Science</td>
-        </tr>
-        <tr>
-            <td><strong>Programme:</strong></td>
-            <td colspan="2">B.Sc Computer Science</td>
-        </tr>
-        <tr>
-            <td><strong>ModeOfEntry/Session/Semester:</strong></td>
-            <td colspan="3">UTME/2024/2025 - Second Semester</td>
-        </tr>
+  <label>CUSTOMER NAME: <input type="text" name="customer_name" placeholder="Enter Customer name"></label><br><br>
+
+  <label>INVOICE NUMBER: <input type="text" name="invoice_number" placeholder="Enter Invoice number"></label><br><br>
+
+  <label>PAYMENT METHOD:</label><br>
+  <input type="radio" name="payment_method" value="credit"> Credit Card
+  <input type="radio" name="payment_method" value="debit"> Debit Card
+  <input type="radio" name="payment_method" value="bank"> Bank Transfer
+  <input type="radio" name="payment_method" value="paypal"> Paypal
+  <input type="radio" name="payment_method" value="check"> Check<br><br>
+
+  <label>AMOUNT TO BE PAID: <input type="text" name="amount" placeholder="Enter Amount"></label><br><br>
+
+  <fieldset>
+    <legend>BILLING ADDRESS:</legend>
+    <label>STREET: <input type="text" name="street" placeholder="Enter Street Address"></label><br><br>
+    <label>CITY: <input type="text" name="city" placeholder="Enter City"></label><br><br>
+    <label>STATE: <input type="text" name="state" placeholder="Enter State"></label><br><br>
+    <label>ZIP CODE: <input type="text" name="zip" placeholder="Enter Zip code"></label><br>
+  </fieldset><br>
+
+  <fieldset>
+    <legend>PAYMENT AUTHORIZATION</legend>
+    <table border="1">
+      <tr>
+        <th>S/n</th>
+        <th>Authorize Person</th>
+        <th>Payment Date</th>
+        <th>Amount Paid</th>
+        <th>Notes</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td><input type="text" name="auth_person_1"></td>
+        <td><input type="date" name="payment_date_1"></td>
+        <td><input type="text" name="amount_paid_1"></td>
+        <td><input type="text" name="notes_1"></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td><input type="text" name="auth_person_2"></td>
+        <td><input type="date" name="payment_date_2"></td>
+        <td><input type="text" name="amount_paid_2"></td>
+        <td><input type="text" name="notes_2"></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td><input type="text" name="auth_person_3"></td>
+        <td><input type="date" name="payment_date_3"></td>
+        <td><input type="text" name="amount_paid_3"></td>
+        <td><input type="text" name="notes_3"></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td><input type="text" name="auth_person_4"></td>
+        <td><input type="date" name="payment_date_4"></td>
+        <td><input type="text" name="amount_paid_4"></td>
+        <td><input type="text" name="notes_4"></td>
+      </tr>
     </table>
-    <br>
+  </fieldset><br>
 
-    <!-- Course Header -->
-    <h3>2024/2025 COURSE CLEARANCE FORM - CURRENT LEVEL: 100L</h3>
+  <label>Signature of Authorizer: <input type="file" name="signature"></label><br><br>
+  <label>Date: <input type="date" name="date"></label><br><br>
 
-    <!-- Courses Table -->
-    <table border="1" cellpadding="5" cellspacing="0" width="100%">
-        <tr>
-            <td colspan="6" align="center">
-                <strong>FAILED/OUTSTANDING COURSES IN FIRST SEMESTER OF PREVIOUS SESSIONS</strong>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="6" align="center"><strong>NO FAILED/OUTSTANDING COURSES</strong></td>
-        </tr>
-        <tr>
-            <td colspan="6" align="center"><strong>CURRENT COURSES FOR THE SEMESTER, 2024/2025 SESSION - LEVEL: 100</strong></td>
-        </tr>
-        <tr>
-            <th>#</th>
-            <th>CourseCode</th>
-            <th>CourseTitle</th>
-            <th>CH</th>
-            <th>Descr</th>
-            <th>Remarks</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>COS121</td>
-            <td>Problem Solving</td>
-            <td>3</td>
-            <td>C</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>GST121</td>
-            <td>Nigerian Peoples and Culture</td>
-            <td>3</td>
-            <td>C</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>MTH121</td>
-            <td>General Mathematics II</td>
-            <td>2</td>
-            <td>C</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>PHY121</td>
-            <td>General Physics II</td>
-            <td>2</td>
-            <td>C</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>PHY128</td>
-            <td>General Physics Practical II</td>
-            <td>1</td>
-            <td>C</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>UUY-CSC121</td>
-            <td>Introduction To Web Programming</td>
-            <td>2</td>
-            <td>C</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>UUY-CSC122</td>
-            <td>Introduction To Information And Communications Technology</td>
-            <td>2</td>
-            <td>C</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td colspan="5"><strong>This is NOT COURSE REGISTRATION FORM | GPA: N/A - CGPA: N/A | CH:</strong></td>
-            <td><strong>18</strong><br><small>* C-Core | E-Elective</small></td>
-        </tr>
-    </table>
-    <br>
-
-    <!-- Electives Info -->
-    <table border="1" cellpadding="5" cellspacing="0" width="100%">
-        <tr>
-            <td>Electives Offered: <strong>NONE</strong> | NOT Offered: <strong>NONE</strong></td>
-        </tr>
-    </table>
-    <br><br>
-
-    <!-- Signatures -->
-    <table border="1" cellpadding="10" cellspacing="0" width="100%">
-        <tr>
-            <td><strong>Student's Signature:</strong> </td>
-            <td><strong>Examination Officer's Signature:</strong></td>
-        </tr>
-    </table>
-    <br><br>
-
-    <!-- Footer -->
-    <footer>
-        <p><b>&copy; 2025 UNIUYO &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Printed on: 26-02-2025 03:54:18</b></p>
-    </footer>
-
+  <input type="submit" value="Submit">
+</form>
 </body>
 </html>
